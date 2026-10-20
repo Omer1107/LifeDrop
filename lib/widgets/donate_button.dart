@@ -15,7 +15,7 @@ class DonateButton extends StatelessWidget {
 
     if (user == null) return;
 
-    await FirebaseFirestore.instance.collection('donations').add({
+    await FirebaseFirestore.instance.collection('donation').add({
       "requestId": requestData['requestId'] ?? "",
       "bloodGroup": requestData['bloodGroup'] ?? "",
       "city": requestData['city'] ?? "",

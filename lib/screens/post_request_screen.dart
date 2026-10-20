@@ -35,7 +35,7 @@ class _PostRequestScreenState extends State<PostRequestScreen> {
     setState(() => isLoading = true);
 
     try {
-      await FirebaseFirestore.instance.collection('requests').add({
+      await FirebaseFirestore.instance.collection('request').add({
         'name': nameController.text.trim(),
         'bloodGroup': bloodController.text.trim(),
         'hospital': hospitalController.text.trim(),

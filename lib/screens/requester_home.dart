@@ -119,7 +119,7 @@ class _RequesterHomeState extends State<RequesterHome> {
 
                   // 🩸 BLOOD GROUP DROPDOWN
                   DropdownButtonFormField<String>(
-                    value: bloodGroup.isEmpty ? null : bloodGroup,
+                    initialValue: bloodGroup.isEmpty ? null : bloodGroup,
                     dropdownColor: Colors.red.shade300,
                     decoration: InputDecoration(
                       labelText: "Blood Group",

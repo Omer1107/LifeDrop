@@ -90,9 +90,9 @@ class _HomeScreenState extends State<HomeScreen>
     Navigator.of(context).push(
       PageRouteBuilder(
         transitionDuration: const Duration(milliseconds: 300),
-        pageBuilder: (_, animation, __) =>
+        pageBuilder: (_, animation, _) =>
             FadeTransition(opacity: animation, child: page),
-        transitionsBuilder: (_, animation, __, child) {
+        transitionsBuilder: (_, animation, _, child) {
           final slide = Tween<Offset>(
             begin: const Offset(0.1, 0),
             end: Offset.zero,
